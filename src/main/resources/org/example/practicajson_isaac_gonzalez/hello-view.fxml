@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practicajson_isaac_gonzalez.util.HelloController">
+  <children>
+    <Button fx:id="importar" layoutX="155.0" layoutY="279.0" mnemonicParsing="false" onAction="#onImportar" prefHeight="38.0" prefWidth="99.0" text="IMPORTAR" />
+    <Label layoutX="78.0" layoutY="67.0" text="Titulo" />
+    <Label layoutX="78.0" layoutY="108.0" text="Fecha" />
+    <Label layoutX="78.0" layoutY="147.0" text="Genero" />
+    <Label layoutX="78.0" layoutY="192.0" text="Director" />
+    <TextField fx:id="tituloTF" layoutX="130.0" layoutY="63.0" prefHeight="25.0" prefWidth="228.0" />
+    <TextField fx:id="fechaTF" layoutX="130.0" layoutY="104.0" prefHeight="25.0" prefWidth="77.0" />
+    <TextField fx:id="genTF" layoutX="130.0" layoutY="143.0" />
+    <TextField fx:id="directorTF" layoutX="130.0" layoutY="188.0" prefHeight="25.0" prefWidth="246.0" />
+    <ListView fx:id="listado" layoutX="395.0" layoutY="54.0" onMouseClicked="#seleccionarPelicula" prefHeight="298.0" prefWidth="191.0" />
+    <Label layoutX="439.0" layoutY="28.0" text="Listado de peliculas" />
+    <Label layoutX="234.0" layoutY="15.0" prefHeight="38.0" prefWidth="77.0" text="IMDB" textFill="RED">
+      <font>
+        <Font size="23.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
